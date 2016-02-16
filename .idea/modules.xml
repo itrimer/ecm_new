@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ecm_api/ecm_api.iml" filepath="$PROJECT_DIR$/ecm_api/ecm_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ecm_base/ecm_base.iml" filepath="$PROJECT_DIR$/ecm_base/ecm_base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ecm_web/ecm_web.iml" filepath="$PROJECT_DIR$/ecm_web/ecm_web.iml" />
+    </modules>
+  </component>
+</project>

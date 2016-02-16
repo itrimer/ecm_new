@@ -1,0 +1,1 @@
+2016-02-16 15:06:12,911 [      0]  ERROR - aba.druid.pool.DruidDataSource - invalid oracle validationQuery. select 1, may should be : select 1 FROM DUAL 
