@@ -35,7 +35,7 @@ public class TestService extends BasicService<Test> implements ITestService {
             Map<String,Object> map = new HashMap<String, Object>();
             map.put("user_id",userId);
             return this.testDao.find(map);
-        }catch (DaoException e){
+        } catch (DaoException e){
             throw new ServiceException(e);
         }
     }

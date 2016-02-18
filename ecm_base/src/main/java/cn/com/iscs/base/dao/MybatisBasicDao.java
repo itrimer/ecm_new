@@ -12,6 +12,7 @@ import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 
+import java.lang.reflect.ParameterizedType;
 import java.util.*;
 
 /**
@@ -27,8 +28,16 @@ public abstract class MybatisBasicDao<T> implements IBasicDao<T> {
     protected Class<T> modelClass;
     private String namespace;
 
-    public MybatisBasicDao(Class<T> modelClass){
-        this.modelClass = modelClass;
+    //利用参数来获取  ，需要子类覆盖传参过来。。
+//    public MybatisBasicDao(Class<T> modelClass){
+//        this.modelClass = modelClass;
+//        this.namespace = modelClass.getName();
+//    }
+
+    //利用获取当前new对象的直接父类泛型
+    public MybatisBasicDao(){
+        ParameterizedType pt = (ParameterizedType) this.getClass().getGenericSuperclass();
+        this.modelClass = (Class<T>)pt.getActualTypeArguments()[0];
         this.namespace = modelClass.getName();
     }
 

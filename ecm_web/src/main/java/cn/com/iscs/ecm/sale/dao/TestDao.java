@@ -14,7 +14,4 @@ import org.springframework.stereotype.Repository;
 @Repository("testDao")
 public class TestDao extends MybatisBasicDao<Test> implements ITestDao {
 
-	public TestDao(){
-		super(Test.class);
-	}
 }
