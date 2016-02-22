@@ -22,7 +22,6 @@ public class testServiceExp {
        System.out.println(testDao);
        System.out.println(testDao.getAll());
        System.out.println(testService);
-
        System.out.println("sss");
     }
 }
