@@ -23,6 +23,19 @@
             <artifactId>spring-data-redis</artifactId>
             <version>${spring-redis-version}</version>
         </dependency>
+
+
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>jsr250-api</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-core</artifactId>
+            <version>5.7.0</version>
+        </dependency>
+
         <dependency>
             <groupId>redis.clients</groupId>
             <artifactId>jedis</artifactId>
@@ -38,6 +51,7 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.25</version>
         </dependency>
+
 
         <dependency>
             <groupId>org.freemarker</groupId>
@@ -102,6 +116,11 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jms</artifactId>
             <version>${spring.version}</version>
         </dependency>
         <dependency>
