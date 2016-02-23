@@ -1,4 +1,4 @@
-import cn.com.iscs.ecm.sale.dao .ITestDao;
+import cn.com.iscs.ecm.sale.dao.ITestDao;
 import cn.com.iscs.ecm.sale.service.ITestService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
