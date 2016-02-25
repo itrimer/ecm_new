@@ -1,3 +1,5 @@
+package mq;
+
 import cn.com.iscs.ecm.sale.dao.ITestDao;
 import cn.com.iscs.ecm.sale.service.ITestService;
 import org.junit.Test;
@@ -9,6 +11,7 @@ import javax.annotation.Resource;
 
 /**
  * Created by xuchun on 16/2/15.
+ * 测试CRUD继承 是否能正常运行。
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:spring-config.xml")

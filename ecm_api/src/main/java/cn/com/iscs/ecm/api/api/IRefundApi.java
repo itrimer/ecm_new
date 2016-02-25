@@ -1,32 +1,32 @@
-package cn.com.iscs.ecm.api.out;
+package cn.com.iscs.ecm.api.api;
 
 import java.util.List;
 
-/**
- * Created by xuchun on 16/2/19.
- */
-public interface IInStockApi {
+public interface IRefundApi {
     /**
      * 查询订单
      * @param tid
      * @return
      */
-    Object fetchTrades(String tid);
+    Object fetchRefunds(String tid);
 
     /**
      * 查询订单
+     *
      * @param dateType  1 修改时间  2 创建时间  3 付款时间
      * @param startDate
      * @param endDate
      * @return
      */
-    List fetchTrades(int dateType,String startDate,String endDate);
+    List fetchRefunds(int dateType,String startDate,String endDate);
+
 
     /**
-     * 入库回传
+     * 更新订单状态
      * @param tid
      * @param status
      * @return
      */
-    String updateTradeStatus(String tid,String status);
+    String updateRefundStatus(String tid,String status);
+
 }
