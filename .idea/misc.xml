@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/ecm_api/pom.xml" />
         <option value="$PROJECT_DIR$/ecm_base/pom.xml" />
         <option value="$PROJECT_DIR$/ecm_web/pom.xml" />
+        <option value="$PROJECT_DIR$/ecm_service/pom.xml" />
       </list>
     </option>
   </component>

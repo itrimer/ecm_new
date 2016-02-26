@@ -16,13 +16,19 @@
             <version>1.0-SNAPSHOT</version>
             <!--<classifier>jar-with-dependencies</classifier>-->
         </dependency>
+        <dependency>
+            <groupId>ecm</groupId>
+            <artifactId>ecm_service</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <!--<classifier>jar-with-dependencies</classifier>-->
+        </dependency>
 
     </dependencies>
     <build>
         <directory>${project.basedir}/web/WEB-INF</directory>
         <outputDirectory>${project.build.directory}/classes</outputDirectory>
         <finalName>${project.artifactId}-${project.version}</finalName>
-        <testOutputDirectory>${project.build.directory}/classes</testOutputDirectory>
+        <testOutputDirectory>${project.build.directory}/test-classes</testOutputDirectory>
 
         <plugins>
             <plugin>
@@ -107,6 +113,10 @@
         </plugins>
         <resources>
             <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+            <resource>
                 <directory>src/main/java</directory>
                 <includes>
                     <include>**/*.xml</include>
@@ -120,6 +130,7 @@
                 </includes>
                 <filtering>true</filtering>
             </resource>
+
         </resources>
     </build>
 

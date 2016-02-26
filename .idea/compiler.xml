@@ -23,9 +23,11 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="ecm_base" />
+        <module name="ecm_service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ecm_api" target="1.6" />
       <module name="ecm_base" target="1.7" />
       <module name="ecm_web" target="1.6" />
     </bytecodeTargetLevel>
